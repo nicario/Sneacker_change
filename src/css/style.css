@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  width: 100%;
+}
+
+.nav{
+  position: relative;
+}
+
+.div__nav{
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a__nav{
+  color: white;
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 36px;
+}
+
+.img__nav{
+  margin-left: 36px;
+}
+
+.div__nav2{
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 65%;
+  justify-content: center;
+}
+
+.div__nav3{
+  background-color: black;
+  width: 154px;
+  height: 33px;
+  border: none;
+  border-radius: 24px;
+}
+
+.img__nav2{
+  padding-top: 10px;
+  margin-left: 25px;
+}
+
+.div__main{
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.div__main2{
+  position: relative;
+}
+
+.radio__main{
+  width: 8px;
+  height: 8px;
+  margin-left: .1px;
+}
+
+.img__main2{
+  position: absolute;
+  top: 25%;
+  z-index: 10;
+}
+
+.img3__main2{
+  position: absolute;
+  right: 15%;
+  top: 27%;
+}
+
+.aside{
+  margin-left: 37px;
+}
+
+.section__aside{
+  margin-bottom: 27px;
+}
+
+.section__aside2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h3__aside2{
+  font-family: 'Medula One', cursive;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.p__aside2{
+  font-family: 'Oswald';
+  text-align: justify;
+  width: 181px;
+  font-size: 12px;
+}
+
+.div2__aside2{
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-top: 25%;
+}
+
+.img__aside2{
+  margin-right: 38px;
+}
+.img2__aside2{
+  margin-right: 25px;
+}
+
+.div__footer{
+  background-color: black;
+  width: 100%;
+  height: 42px;
+}
+
+.p__footer{
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Oswald';
+}
+
+
+.radio__main:nth-child(1):checked ~ .div__main3 .div2__main3{--selected-item: 0;}
+.radio__main:nth-child(2):checked ~ .div__main3 .div2__main3{--selected-item: 1;}
+.radio__main:nth-child(3):checked ~ .div__main3 .div2__main3{--selected-item: 2;}
+.radio__main:nth-child(4):checked ~ .div__main3 .div2__main3{--selected-item: 3;}
+
+.div__main3{
+  overflow: hidden;
+}
+
+.div2__main3{
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+
+
+
+
