@@ -228,6 +228,7 @@ input::placeholder{
 .div__form3{
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .div_div{
@@ -235,11 +236,12 @@ input::placeholder{
   width: 120px;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .save{
   position: absolute;
-  bottom: 28%;
+  bottom: 46%;
   left: 26%;
   font-family: 'Oswald';
   font-size: 12px;
@@ -247,102 +249,8 @@ input::placeholder{
 
 .senha{
   position: absolute;
-  bottom: 28%;
+  bottom: 46%;
   right: 14%;
   font-family: 'Oswald';
   font-size: 12px;
-}
-
-.botao{
-  position: absolute;
-  margin-left: -9999px;
-  visibility: hidden;
-}
-
-.botao + .p__botao{
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  user-select: none;
-}
-.botaozin + .p__botao{
-  padding: 2px;
-  width: 37px;
-  height: 16px;
-  background-color: #000000;
-  border: 2px solid black;
-  border-radius: 60px;
-  margin-left: 30px;
-}
-
-
-.botaozin + .p__botao:before,
-.botaozin + .p__botao:after{
-  display: block;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: "";
-}
-
-.botaozin + .p__botao:before{
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: background 0.4s;
-}
-
-.botaozin + .p__botao:after{
-  width: 12px;
-  height: 12px;
-  margin-top: 3px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 100%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s;
-}
-
-.botaozin:checked + .p__botao:after{
-  transform: translateX(28px);
-}
-
-.botao__login{
-  background-color: #000000;
-  color: white;
-  border: none;
-  width: 330px;
-  height: 51px;
-  margin-left: 8%;
-  margin-top: 46px;
-  margin-bottom: 0;
-  border-radius: 3px;
-  font-family: 'Oswald';
-  font-size: 22px;
-}
-
-.login{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.botao__login2{
-  color: black;
-  background-color: white;
-  border: none;
-  width: 328px;
-  height: 51px;
-  margin-left: 5%;
-  margin-right: 20px;
-  margin-top: 38px;
-  border-radius: 3px;
-  font-family: 'Oswald';
-  font-size: 22px;
-}
-
-.img__login{
-  width: 134px;
-  margin-bottom: 23px;
 }
